@@ -29,10 +29,7 @@ body {
     padding: 0px;
     overflow: hidden;
     background-color: #ffffff;
-  /*  height: 100%; */
-  /*  position: fixed;
-    overflow: auto; */
-   /*  width: 25%; */ 
+  
 }
 /* set attributes for all list items in the nav bar */
 .navLi {
@@ -53,24 +50,25 @@ body {
     text-decoration: none;
     font-size: 10px;
     margin: 0;
-  /*  line-height: 30px; */
+  
     }
    /* set position and attributes for Teal Name Box */
-    #absolute {
-        position: absolute;
-        height: 50px;
-        width: 150px;
-        top: 0;
-        left: 250px;
-        margin: 0;
-        text-align: center;
-        background: #4aaaa5;
-        color: #ffffff;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-weight: bold;
-        line-height: 50px;
+#absolute {
+    position: absolute;
+    height: 50px;
+    width: 150px;
+    top: 0;
+    left: 549px;
+    margin: 0;
+    text-align: center;
+    background: #4aaaa5;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    line-height: 50px;
       }
 
+ /* set main background properties */
 #mainBackground {
    position: absolute;
    top: 50px;
@@ -86,35 +84,34 @@ body {
    border-width: 1.5px 0px 0px 0px;
    z-index: 1;
 
-  /* remember to set alt background-color: blue; in case can't dsp image */
+  /* remember to set alt background-color: white; in case can't dsp image */
    }
 
 #contentArea {
-   position: relative;
-   padding-top: 0px;
-   padding-bottom: 50px;
-   padding-left: 50px;
-   padding-right: 50px;
-   width: 960px;
-   height: 600px;
-   background-color: #ffffff;
-   left: 250px;
-   top: 50px;
-   z-index: 2;
+    position: absolute;
+    margin-top: 20px;
+    left: 549px;
+    padding: 25px;
+    width: 960px;
+    height: 600px;
+    background-color: #ffffff;
+    z-index: 2;
 }
 
 #contentHeader {
     color: #4aaaa5;
     font-size: 20px;
     font-weight: bold;
-    line-height: 65px;
+    line-height: 55px;
 }
+
 #grayLine {
   position: relative;
   height: 2px;
   padding: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 25px;
   background: #dddddd;
+  
 }
 .bioImage {
     display: block;
@@ -122,13 +119,14 @@ body {
     max-width: 200px;
     max-height: 150px;
     width: auto;
-    height: auto;
-    margin-right: 10px;
+   /* height: auto; */
     clear: both;
-}     
+    }     
 .floatLeft {
     float: left;
-    margin: 10px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    
 }
 
 p {
@@ -155,19 +153,19 @@ p {
         left: 0;
         top: 768px;
         color: #ffffff;
-          font-size: 65%;
+          font-size: 75%;
           text-align: center;
           height: 50px;
           width: 100%;
-          line-height: 50px;
+          line-height: 75px;
           background-color: #666666;
           z-index: 4; 
-               }
+        }
 
  /**
   * Begin styles for contact page
   **/      
-  label {
+label {
     margin: auto;
     color: #777777;
     font-family: Arial, Helvetica, sans-serif;
@@ -207,13 +205,10 @@ p {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 15px;
+    color: #ffffff;
 }
 
-
-
-  /**
-  * Begin styles for portfolio page
-  **/
+  /*  Begin styles for portfolio page */
 
 .row {
     margin: 0px;
@@ -234,7 +229,7 @@ position: relative;
 position: relative;
 left: 0px;
 bottom: 60px;
-background-color: #666666;
+background-color: #4aaaa5;
 color: white;
 padding-top: 10px;
 padding-bottom: 10px;

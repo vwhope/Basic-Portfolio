@@ -1,0 +1,159 @@
+/**
+  * Begin styles for shared elements and home (index) page
+  **/
+
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    }
+
+body {
+    background-color: #ffffff;
+    }
+
+/* set attributes for the navigation bar itself */
+.navBar {
+    background-color: #ffffff;
+    height: 50px;
+        
+}
+/* set attributes for the unordered list in the nav bar */
+.navUl {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #ffffff;
+  /*  height: 100%; */
+  /*  position: fixed;
+    overflow: auto; */
+   /*  width: 25%; */ 
+}
+
+/* set attributes for all list items in the nav bar */
+.navLi {
+    /*  width: 250px; */
+    float: right;
+    /*  clear: right; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-right: 1px solid #777777;
+    
+}
+/* set attributes for all a href items in the nav bar */
+.navA {
+    display: inline-block;
+    color: #777777;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-decoration: none;
+    font-size: 10px;
+    margin: 0;
+  /*  line-height: 30px; */
+    }
+
+   /* set position and attributes for Teal Name Box */
+    #absolute {
+        position: absolute;
+        height: 50px;
+        width: 150px;
+        top: 0;
+        left: 549px;
+        margin: 0;
+        text-align: center;
+        background: #4aaaa5;
+        color: #ffffff;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+        line-height: 50px;
+      }
+      
+#mainBackground {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 768px;
+    background-image: url('assets/images/concrete-texture.png'); 
+    background-repeat: repeat;
+    border-top-color: #cccccc;
+    border-style: solid;
+    border-width: 1.5px 0px 0px 0px;
+    z-index: 1;
+}
+   /*   #contentArea {
+        position: relative;
+        padding-top: 0px;
+        padding-bottom: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        width: 960px;
+        height: 600px;
+        background-color: #ffffff;
+        left: 250px;
+        top: 50px;
+        z-index: 2;
+     } */
+
+       #contentArea {
+        position: relative;
+        margin-top: 50px;
+        border-width: 5px;
+        border-color: black;
+        padding: 25px;
+        width: 960px;
+        height: 600px;
+        background-color: #ffffff;
+        z-index: 2;
+       
+    } 
+     
+     #contentHeader {
+         position: absolute;
+         left: 575px;
+         top: 110px;
+         color: #4aaaa5;
+         font-size: 20px;
+         font-weight: bold;
+         line-height: 65px;
+         z-index: 3;
+     }
+
+     
+    #grayLine {
+    position: absolute;
+    left: 575px;
+    top: 150px;
+    height: 2px;
+    padding: 0px;
+    margin-bottom: 0px;
+    background: #dddddd;
+    z-index: 4;
+  }
+
+      #tealLine {
+        position: absolute;
+        left: 0;
+        top: 760px;
+        width: 100%;
+        height: 8px; 
+        background: #4aaaa5;
+        z-index: 3;
+      }
+
+      .footer {
+        position: absolute;  
+        left: 0;
+        top: 768px;
+        color: #ffffff;
+          font-size: 75%;
+          text-align: center;
+          height: 50px;
+          width: 100%;
+          line-height: 75px;
+          background-color: #666666;
+          z-index: 4; 
+               }
