@@ -1,29 +1,67 @@
+<!-- Vicki Hope Basic Portfolio Home Page -->
+
 <!doctype html>
 <html lang="en-us">
 
 <head>
     <meta charset="UTF-8">
-    <title>Basic Portfolio</title>
+    <title>Basic Portfolio-Vicki Hope</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
+    
+<!-- Navigation Bar elements -->
 <nav class="navBar">
-    <ol>
-        <li class="navLink"><a href="index.html">About</a></a></li>
-        <li class="navLink"><a href="portfolio.html">Portfolio</a></li>
-        <li class="navLink"><b><a href="Contact.html">Contact</a></b></li>
-    </ol>
+    <ul class="navUl">
+        <li class="navLi"><a class="navA" href="contact.html">Contact</a></li>
+        <li class="navLi"><a class="navA" href="portfolio.html">Portfolio</a></li>
+        <li class="navLi"><a class="navA" href="index.html">About</a></b><li>
+    </ul>
+
+    <!-- Absolute Positioned blue box on top of Nav Bar -->
+<div id="absolute">Vicki Hope</div>
+
 </nav>
 
+<!-- Main textured background - entire page -->
+<div id="mainBackground"></div>
 
-    <div>
-            <section>
+    <!-- Smaller contect area -->
+    <div id="contentArea">
 
+    <div id="contentHeader">Contact</div>
 
-            </section>
+    <div id="grayLine"></div>
 
+    <!-- contentArea Form with User name, User email, User message, Submit -->
+    <div class="userDataForm">
+            <form action="">
+          
+              <label for="name">Name</label> <br>
+              <input type="text" id="name" name="Name" placeholder=" John Smith" size="173"> <br>
+          
+              <label for="email">Email</label> <br>
+              <input type="text" id="email" name="email" placeholder=" example@gmail.com" size="173"> <br>
+          
+              <label for="message">Message</label> <br>
+              <textarea id="message" name="message" placeholder=" " 
+                style="width:856px; height:200px;"></textarea> <br>
+          
+              <input class="submit" type="submit" value="Submit">
+          
+            </form>
+          
+        </div>
 
+    </div>
+            
+            <div id="tealLine"></div>
+
+            <footer class="footer">
+                Copyright &copy;
+            </footer>
+            
     </div>
 
 

@@ -2,6 +2,10 @@
  * Design Info for Basic Portfolio Pages
  **/
 
+ /**
+  * Begin styles for shared elements and home (index) page
+  **/
+
  * {
     box-sizing: border-box;
     padding: 0;
@@ -92,7 +96,7 @@ body {
    padding-left: 50px;
    padding-right: 50px;
    width: 960px;
-   height: 400px;
+   height: 600px;
    background-color: #ffffff;
    left: 250px;
    top: 50px;
@@ -157,5 +161,84 @@ p {
           width: 100%;
           line-height: 50px;
           background-color: #666666;
-          z-index: 4;
+          z-index: 4; 
                }
+
+ /**
+  * Begin styles for contact page
+  **/      
+  label {
+    margin: auto;
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 28px;
+  }
+  .userDataForm {
+      float: left;
+  }
+#name {
+    margin: auto;
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    line-height: 18px;
+       
+}
+#email {
+    margin: auto;
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    line-height: 18px;
+}
+#message {
+    margin: auto;
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    line-height: 18px;
+}
+
+.submit {
+    background-color: #4aaaa5;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 15px;
+}
+
+
+
+  /**
+  * Begin styles for portfolio page
+  **/
+
+.row {
+    margin: 0px;
+    }
+.row > .column {
+    padding: 12px;
+}
+.column {
+float: left;
+width: 300px;
+}
+
+.photoContainer {
+position: relative;
+}
+
+.photoTag {
+position: relative;
+left: 0px;
+bottom: 60px;
+background-color: #666666;
+color: white;
+padding-top: 10px;
+padding-bottom: 10px;
+text-align: center;
+
+}
+
