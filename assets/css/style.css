@@ -16,42 +16,43 @@ body {
     background-color: #ffffff;
     }
 
-/* set attributes for the navigation bar itself */
-.navBar {
-    background-color: #ffffff;
-    height: 50px;
-        
-}
-/* set attributes for the unordered list in the nav bar */
-.navUl {
-    list-style-type: none;
-    margin: 0;
-    padding: 0px;
+/* Begin Navigation Bar Settings */
+.topnav {
     overflow: hidden;
     background-color: #ffffff;
+  }
   
-}
-/* set attributes for all list items in the nav bar */
-.navLi {
-    /*  width: 250px; */
-    float: right;
-    /*  clear: right; */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-right: 1px solid #777777;
-    
-}
-/* set attributes for all a href items in the nav bar */
-.navA {
-    display: inline-block;
+  .topnav a {
+    float: left;
     color: #777777;
     text-align: center;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding: 14px 16px;
     text-decoration: none;
-    font-size: 10px;
-    margin: 0;
+    font-size: 12px;
+    border-right: 1px solid #dddddd;
+    margin-top: 3px;
+  }
   
-    }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+   
+  .topnav-right {
+    float: right;
+    position: fixed;
+    top: 0px;
+    right: 550px;
+  }
+  
+
+
+
+
+
+
+
    /* set position and attributes for Teal Name Box */
 #absolute {
     position: absolute;
@@ -89,11 +90,11 @@ body {
 
 #contentArea {
     position: absolute;
-    margin-top: 20px;
+    margin-top: 75px;
     left: 549px;
     padding: 25px;
     width: 960px;
-    height: 600px;
+  /*  note to self: not setting a height allows page to move with content */
     background-color: #ffffff;
     z-index: 2;
 }
