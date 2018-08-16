@@ -1,4 +1,8 @@
 /**
+ * JUNK JUNK JUNK
+ **/
+
+ /**
   * Begin styles for shared elements and home (index) page
   **/
 
@@ -10,112 +14,130 @@
 
 body {
     background-color: #ffffff;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
-  
+
 /* Begin Navigation Bar Settings */
-    .topnav {
-        overflow: hidden;
-        background-color: #ffffff;
-      }
-      
-      .topnav a {
-        float: left;
-        color: #777777;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 12px;
-        border-right: 1px solid #dddddd;
-        margin-top: 3px;
-      }
-      
-      .topnav a:hover {
-        background-color: #ddd;
-        color: black;
-      }
-      
-      .topnav a.active {
-        background-color: #4CAF50;
-        color: white;
-      }
-      
-      .topnav-right {
-        float: right;
-        position: fixed;
-        top: 0px;
-        right: 550px;
-      }
-      
+.topnav {
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #777777;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    border-right: 1px solid #dddddd;
+    margin-top: 3px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+   
+  .topnav-right {
+    float: right;
+    position: fixed;
+    top: 0px;
+    right: 550px;
+  }
+  
+
+
+
+
+
+
 
    /* set position and attributes for Teal Name Box */
-    #absolute {
-        position: fixed;
-        height: 50px;
-        width: 150px;
-        top: 0;
-        left: 549px;
-        margin: 0;
-        text-align: center;
-        background: #4aaaa5;
-        color: #ffffff;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-weight: bold;
-        line-height: 50px;
-      }
-  /* end Navigation Bar settings */
-  
-  
-#mainBackground {
+#absolute {
     position: absolute;
-    top: 50px;
-    left: 0;
-    padding: 0;
+    height: 50px;
+    width: 150px;
+    top: 0;
+    left: 549px;
     margin: 0;
-    width: 100%;
-    height: 768px;
-    background-image: url('assets/images/concrete-texture.png'); 
-    background-repeat: repeat;
-    border-top-color: #cccccc;
-    border-style: solid;
-    border-width: 1.5px 0px 0px 0px;
-    z-index: 1;
-}
-     #contentArea {
-        position: relative;
-        margin-top: 25px; 
-        border-width: 5px;
-        border-color: black;
-        padding: 25px;
-        width: 960px;
-        height: 600px;
-        background-color: #ffffff;
-        z-index: 2;
-       
-    } 
-     
-     #contentHeader {
-         position: absolute;
-         left: 575px;
-         top: 110px;
-         color: #4aaaa5;
-         font-size: 20px;
-         font-weight: bold;
-         line-height: 65px;
-         z-index: 3;
-     }
+    text-align: center;
+    background: #4aaaa5;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    line-height: 50px;
+      }
 
-     
-    #grayLine {
+ /* set main background properties */
+#mainBackground {
+   position: absolute;
+   top: 50px;
+   left: 0;
+   padding: 0;
+   margin: 0;
+   width: 100%;
+   height: 100%;
+   background-image: url('../images/concrete-texture.png'); 
+   background-repeat: repeat;
+   border-top-color: #cccccc;
+   border-style: solid;
+   border-width: 1.5px 0px 0px 0px;
+   z-index: 1;
+
+  /* remember to set alt background-color: white; in case can't dsp image */
+   }
+
+#contentArea {
     position: absolute;
-    left: 575px;
-    top: 150px;
-    height: 2px;
-    padding: 0px;
-    margin-bottom: 0px;
-    background: #dddddd;
-    z-index: 4;
-  }
+    margin-top: 75px;
+    left: 549px;
+    padding: 25px;
+    width: 960px;
+  /*  note to self: not setting a height allows page to move with content */
+    background-color: #ffffff;
+    z-index: 2;
+}
+
+#contentHeader {
+    color: #4aaaa5;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 55px;
+}
+
+#grayLine {
+  position: relative;
+  height: 2px;
+  padding: 0px;
+  margin-bottom: 25px;
+  background: #dddddd;
+  
+}
+.bioImage {
+    display: block;
+    position: relative;
+    max-width: 200px;
+    max-height: 150px;
+    width: auto;
+   /* height: auto; */
+    clear: both;
+    }     
+.floatLeft {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    
+}
+
+p {
+        margin: auto;
+        color: #777777;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        line-height: 28px;
+             
+}
 
       #tealLine {
         position: absolute;
@@ -139,4 +161,80 @@ body {
           line-height: 75px;
           background-color: #666666;
           z-index: 4; 
-               }
+        }
+
+ /**
+  * Begin styles for contact page
+  **/      
+label {
+    margin: auto;
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 28px;
+  }
+  .userDataForm {
+      float: left;
+  }
+#name {
+    margin: auto;
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    line-height: 18px;
+       
+}
+#email {
+    margin: auto;
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    line-height: 18px;
+}
+#message {
+    margin: auto;
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    line-height: 18px;
+}
+
+.submit {
+    background-color: #4aaaa5;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 15px;
+    color: #ffffff;
+}
+
+  /*  Begin styles for portfolio page */
+
+.row {
+    margin: 0px;
+    }
+.row > .column {
+    padding: 12px;
+}
+.column {
+float: left;
+width: 300px;
+}
+
+.photoContainer {
+position: relative;
+}
+
+.photoTag {
+position: relative;
+left: 0px;
+bottom: 60px;
+background-color: #4aaaa5;
+color: white;
+padding-top: 10px;
+padding-bottom: 10px;
+text-align: center;
+
+}
+
