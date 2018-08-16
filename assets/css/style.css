@@ -75,18 +75,20 @@ body {
    width: 100%;
    height: 100%;
    background-image: url('../images/concrete-texture.png'); 
+   /* remember to set alt background-color: white; in case can't dsp image */
+   background-color: #ffffff;
    background-repeat: repeat;
    border-top-color: #cccccc;
    border-style: solid;
    border-width: 1.5px 0px 0px 0px;
    z-index: 1;
 
-  /* remember to set alt background-color: white; in case can't dsp image */
+  
    }
 
 #contentArea {
     position: fixed; 
-    overflow: scroll;
+    overflow: auto;
     top: 75px;
     left: 549px;
     padding: 50px;
@@ -94,6 +96,9 @@ body {
   /*  note to self: not setting a height allows page to move with content */
     height: 600px;
     background-color: #ffffff;
+    border-color: #dddddd;
+   border-style: solid;
+   border-width: 1px 1px 1px 1px;
     z-index: 2;
 }
 
@@ -161,7 +166,7 @@ a.linkedIn:hover{color: #bbfffb;}
 border-top: 5px solid #4aaaa5;
 width: 100%;
 background-color: #666666;
-color: white;
+color: #ffffff;
 text-align: center;  
 
 position: fixed;
@@ -224,7 +229,9 @@ label {
     margin: 0px;
     }
 .row > .column {
-    padding: 12px;
+   /* padding-top: 12px; */
+    padding-left: 12px;
+    padding-right: 12px;
 }
 .column {
 float: left;
@@ -246,4 +253,25 @@ padding-bottom: 10px;
 text-align: center;
 
 }
+/* show photo credits on hover */
 
+.photoContainer:hover .overlay {
+    opacity: 1;
+  }
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    /* background: rgba(0, 0, 0, 0.5); /* Black see-through */ 
+    color: #f1f1f1; 
+    width: 100%;
+   /* transition: .5s ease; */
+    opacity:0;
+    color: white;
+    /* font-size: 20px; */
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    /* padding: 20px; */
+    text-align: center; 
+
+}
