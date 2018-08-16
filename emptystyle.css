@@ -10,115 +10,50 @@ body {
     }
 
 /* Begin Navigation Bar Settings */
-.topnav {
-    overflow: hidden;
-    background-color: #ffffff;
-  }
-  
-  .topnav a {
-    float: left;
-    color: #777777;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 12px;
-    border-right: 1px solid #dddddd;
-    margin-top: 3px;
-  }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-   
-  .topnav-right {
-    float: right;
-    position: fixed;
-    top: 0px;
-    right: 550px;
-  }
-  
-   /* set position and attributes for Teal Name Box */
 
-   h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    line-height: 50px; 
-   }
-
-   h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    line-height: 50px;
-   }
-
-   h3 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    line-height: 50px;
-   }
-
-#absolute {
-    position: fixed;
-    height: 50px;
-    width: 150px;
-    top: 0;
-    left: 549px;
-    margin: 0;
-    text-align: center;
-    background: #4aaaa5;
-    color: #ffffff;
-  /**  font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    line-height: 50px;
-    z-index: 1; **/
-      }
-
-
-.container {
-    position: absolute;
-    margin-top: 75px;
-    left: 549px;
-    padding: 25px;
-    width: 960px;
-  /*  note to self: not setting a height allows page to move with content */
-    background-color: #777777;
-    
+#navTop ul {
+  margin: 0;
+  padding-top: 15px;
+  padding-right: 450px;
+  padding-left: 200px;
+  float: right;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.bioImage {
-    display: block;
-    position: relative;
-    max-width: 200px;
-    max-height: 150px;
-    width: auto;
-   /* height: auto; */
-    clear: both;
-    }     
-
-
-.floatLeft {
-    float: left;
-    margin-right: 15px;
-    margin-bottom: 8px;
+#navTop ul li {
+  list-style-type: none;
+  display: inline; 
 }
 
+#navTop li:not(:first-child):before {
+  content: " | ";
+}
 
-#tealBar {
-    position: relative;
-    left: 0;
-    width: 100%;
-    height: 8px; 
-    background: #4aaaa5;
-    
-  }
+#navTop ul li a {
+  position: right; 
+  color: #777777;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 12px;
 
- .footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: #666666;
-   color: white;
-   text-align: center;  
-   height: 50px;
-        }
+}
+
+#navTop ul li a:hover {
+    background-color: #dddddd;
+    color: #4aaaa5;
+}
+
+#fixed {
+  position: fixed;
+  height: 50px;
+  width: 150px;
+  top: 0;
+  left: 549px;
+  margin: 0;
+  padding-top: 11px;
+  text-align: center;
+  background: #4aaaa5;
+  color: #ffffff;
+}
+

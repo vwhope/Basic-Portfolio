@@ -1,11 +1,9 @@
 /**
- * Design Info for Basic Portfolio Pages
+ * Stylesheet - Basic Portfolio Website
  **/
-
- /**
-  * Begin styles for shared elements and home (index) page
-  **/
-
+ 
+ /* Begin styles for shared elements and home (index) page */
+  
  * {
     box-sizing: border-box;
     padding: 0;
@@ -15,54 +13,57 @@
 body {
     background-color: #ffffff;
     }
-
+/* Begin NEW Navigation Bar Settings */
 /* Begin Navigation Bar Settings */
-.navTop {
-    overflow: hidden;
-    background-color: #ffffff;
-    position: fixed;
+
+#navTop ul {
+    margin: 0;
+    padding-top: 15px;
+    padding-right: 450px;
+    padding-left: 200px;
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
-  .navTop a {
-    float: left;
+  #navTop ul li {
+    list-style-type: none;
+    display: inline; 
+    max-width: 1509px;
+  }
+  
+  #navTop li:not(:first-child):before {
+    content: " | ";
+  }
+  
+  #navTop ul li a {
+    position: right; 
     color: #777777;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 12px;
-    border-right: 1px solid #dddddd;
-    margin-top: 3px;
+  
   }
   
-  .navTop a:hover {
-    background-color: #ddd;
-    color: black;
+  #navTop ul li a:hover {
+      background-color: #dddddd;
+      color: #4aaaa5;
   }
   
-   
-  .navTop-right {
-    float: right;
-    position: fixed;
-    top: 0px;
-    right: 550px;
-  }
-  
-   /* set position and attributes for Teal Name Box */
- #navTitle {
+  #fixed {
     position: fixed;
     height: 50px;
     width: 150px;
     top: 0;
     left: 549px;
     margin: 0;
+    padding-top: 11px;
     text-align: center;
     background: #4aaaa5;
     color: #ffffff;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    line-height: 50px;
-    z-index: 1;
-      }
+  }
+  
+ 
 
  /* set main background properties */
 #mainBackground {
@@ -133,15 +134,28 @@ p {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 15px;
         line-height: 28px;
+        text-align: justify;
 }
+
+a.linkedIn:link{color:#4aaaa5;}
+a.linkedIn:visited{color: #777777;}
+a.linkedIn:hover{color: #bbfffb;}
+
 
 .indented {
    padding-left: 50pt;
    padding-right: 50pt;
    text-align: justify;
+   font-family: Arial, Helvetica, sans-serif;
+   color: #777777;
+   line-height: 150%;
+   font-size: 15px;
    
 }
 
+.indented ul {
+    list-style: none;
+}
   
 .footer {
 border-top: 5px solid #4aaaa5;
