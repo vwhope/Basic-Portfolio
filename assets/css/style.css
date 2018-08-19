@@ -88,25 +88,25 @@ body {
    border-top-color: #cccccc;
    border-style: solid;
    border-width: 1.5px 0px 0px 0px;
-   z-index: 1;
+ /* z-index: 1; */
 
   
    }
 
 #contentArea {
-    position: fixed; 
-    overflow: auto;
-    top: 75px;
-    left: 549px;
-    padding: 50px;
     width: 960px;
-  /*  note to self: not setting a height allows page to move with content */
+    margin: 0 auto;
+    overflow: auto;
+    padding: 50px;
+    margin-top: 50px;
+
+     /*  note to self: not setting a height allows page to move with content */
     height: 600px;
-    background-color: #ffffff;
-    border-color: #dddddd;
+   background-color: #ffffff;
+   border-color: #dddddd;
    border-style: solid;
    border-width: 1px 1px 1px 1px;
-    z-index: 2;
+   
 }
 
 #contentHeader {
@@ -127,17 +127,14 @@ body {
 .bioImage {
     display: block;
     position: relative;
-    max-width: 200px;
-    max-height: 150px;
-    width: auto;
-   /* height: auto; */
     clear: both;
-    }     
+   
+}     
+
 .floatLeft {
     float: left;
-    margin-right: 15px;
-    margin-bottom: 8px;
-    
+    margin-right: 25px;
+       
 }
 
 p {
